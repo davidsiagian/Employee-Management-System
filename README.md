@@ -4,6 +4,7 @@ This project is created as the challenge to be a member of  Bank Mandiri team as
 - Angular version 11
 - Bootstrap 4
 - Javascript
+- Typescript
 
 ### Development Approach
 - First, I created the project using **ng new Employee-Management-System**.
@@ -18,11 +19,11 @@ npm install
 ```
 For development,
 ```
-npm start
+ng serve
 ```
 For production,
 ```
-npm run build
+ng build
 ```
 
 ### Rules to use
