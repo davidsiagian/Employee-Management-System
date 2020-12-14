@@ -38,8 +38,8 @@ export class LoginComponent implements OnInit {
     }
 
     if (this.username == this.jsonData.username && this.password == this.jsonData.password) {
-      this.alertService.success("Login successfully");
       this.router.navigate(['/employee/employee-list']);
+      this.alertService.success("Login successfully");
     }
     else {
       this.error = "Wrong password or username.";

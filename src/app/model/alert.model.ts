@@ -5,10 +5,7 @@ export class Alert {
     keepAfterRouteChange: boolean;
 
     constructor(init?:Partial<Alert>) {
-        this.type = AlertType.Success
-        this.message = ''
-        this.alertId = ''
-        this.keepAfterRouteChange = false
+        Object.assign(this, init);
     }
 }
 

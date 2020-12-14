@@ -11,10 +11,10 @@ import { timeout } from 'rxjs/operators';
     styleUrls: ['alert.component.scss']
 })
 export class AlertComponent implements OnInit, OnDestroy {
-    @Input() id: string = '';
+    @Input() id: string;
 
     alerts: Alert[] = [];
-    subscription: Subscription = new Subscription();
+    subscription: Subscription;
 
     constructor(private alertService: AlertService) { }
 
