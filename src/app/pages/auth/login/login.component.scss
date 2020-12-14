@@ -1,0 +1,202 @@
+.login-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(47,47,180,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.login-container{
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-wrap {
+    width: 450px;
+    background: #f9f9f9;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(204,204,204,.5);
+}
+
+.login-form{
+    margin:0 auto;
+    width: 350px;
+}
+
+.login-form-title{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 39px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.login-button{
+    width: 100%;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    height:35px;
+    margin-bottom: 12px;
+    background-position: 30px center;
+}
+
+.login-button-google{
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #dadada;
+}
+
+.login-button-facebook{
+    background-color: rgb(37, 0, 247);
+    color: rgb(255, 255, 255);
+    border: 1px solid #dadada;
+}
+
+.login-button-submit{
+    background-color: #0038ac;
+    color: rgb(255, 255, 255);
+    border: 1px solid #dadada;
+}
+
+.login-button-submit:focus {
+    outline: none;
+    box-shadow: none;
+    background: #2a69e7;
+  }
+
+.text-sign-up {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+.text-with-line{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 14px;
+    text-align: center; 
+    border-bottom: 1px solid #d9d9d9; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.text-with-line span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.link-sign-up:hover{
+    color: blue!important;
+}
+
+.input-wrap{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #d9d9d9;
+    margin-bottom: 12px;
+}
+
+.input-label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 7px;
+}
+
+.input-login{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.2;
+
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+
+    border:none;
+    outline:none;
+}
+
+.focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+.focus-input::after {
+    color: #adadad;
+    font-size: 22px;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: calc(100% - 20px);
+    bottom: 0;
+    left: 0;
+    padding-left: 13px;
+    padding-top: 3px;
+  }
+  
+.focus-input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7f7f7f;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  
+  .input-login:focus + .focus-input::before {
+    width: 100%;
+  }
+  
+  .has-val.input-login + .focus-input::before {
+    width: 100%;
+  }
+  
+  .input-login:focus + .focus-input::after {
+    color: #a64bf4;
+  }
+  
+  .has-val.input-login + .focus-input::after {
+    color: #a64bf4;
+  }
+
+  .error{
+      background-color: red;
+  }
+  
+

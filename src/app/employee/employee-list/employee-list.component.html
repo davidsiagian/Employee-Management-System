@@ -1,0 +1,63 @@
+<app-employee>
+    <content>
+        <div class="row justify-content-between">
+            <div class="col-md-4 mt-2">
+                <button class="btn btn-info" (click)="goToAddEmployee()">Add Employee</button>
+
+            </div>
+            <div class="col-md-4 mt-2">
+                <button class="btn btn-secondary" (click)="logOut()">Logout</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <th>
+                            Username
+                        </th>
+                        <th>
+                            First Name
+                        </th>
+                        <th>
+                            Last Name
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let employee of displayEmployeeList | async; let i = index">
+                            <td>
+                                <a class="text-primary cursor-pointer" (click)="goToDetail(i)">{{employee.username}}</a>
+                            </td>
+                            <td>
+                                {{employee.firstName}}
+                            </td>
+                            <td>
+                                {{employee.lastName}}
+                            </td>
+                            <td>
+                                {{employee.status}}
+                            </td>
+                            <td>
+                                <button type="button" (click)="goToDetail(i)" class="btn btn-info btn-sm ml-1"><i
+                                        class="fa fa-info"></i></button>
+
+                                <a (click)="edit()" class="btn btn-warning btn-sm ml-1"><i
+                                        class="fa fa-edit"></i></a>
+
+                                <a type="button" (click)="delete()" class="btn btn-danger btn-sm ml-1"><i
+                                        class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <mat-paginator #matPaginator [hidePageSize]="true" [pageSize]="10" (page)="onPaginateChange($event)">
+                </mat-paginator>
+            </div>
+        </div>
+    </content>
+</app-employee>

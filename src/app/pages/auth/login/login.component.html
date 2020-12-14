@@ -1,0 +1,32 @@
+<div class="login-wrapper">
+    <div class="login-container">
+        <div class="login-wrap">
+            <form class="py-2 login-form" (ngSubmit)="login()">
+                <span class="login-form-title pb-1">
+                    <h5>Employee Management System</h5>
+                </span>
+    
+                <div class="input-wrap pt-3">
+                    <input type="text" class="input-login" name="username" placeholder="Username" required
+                        autoComplete="off" [(ngModel)]="username">
+                    <span class="focus-input" data-symbol="&#xf206;"></span>
+                </div>
+    
+                <div class="input-wrap">
+                    <input type="password" class="input-login" name="password" placeholder="Password" required
+                        autoComplete="off" [(ngModel)]="password">
+                    <span class="focus-input" data-symbol="&#xf190;"></span>
+                </div>
+    
+                <div class="flex">
+                    <button type="submit" class="login-button login-button-submit">Login</button>
+                </div>
+
+                <div class="text-center pb-3" *ngIf="error">
+                    <p class="text-danger">{{error}}</p>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>

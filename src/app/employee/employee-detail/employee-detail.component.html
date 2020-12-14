@@ -1,0 +1,83 @@
+<app-employee>
+    <content>
+
+        <div class="row">
+            <div class="col-md-12 mt-2">
+                <button class="btn btn-info" (click)="goToList()">Ok</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>User Name</label>
+                                    <p class="font-weight-bold">{{employee.username}}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <p class="font-weight-bold">{{employee.firstName}}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Owner</label>
+                                    <p class="font-weight-bold">{{employee.lastName}}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <p class="font-weight-bold">{{employee.email}}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Birthdate</label>
+                                    <p class="font-weight-bold">{{employee.birthDate}}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Basic Salary</label>
+                                    <p class="font-weight-bold">{{employee.basicSalary | currency: 'IDR. '}}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Status</label>
+                                    <p class="font-weight-bold">{{employee.status}}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Group</label>
+                                    <p class="font-weight-bold">{{employee.group}}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <p class="font-weight-bold">{{employee.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </content>
+</app-employee>
