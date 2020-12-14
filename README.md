@@ -1,27 +1,31 @@
-# EmployeeManagementSystem
+This project is created as the challenge to be a member of  Bank Mandiri team as a Front end Developer.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+### Technology Stacks
+- Angular version 11
+- Bootstrap 4
+- Javascript
 
-## Development server
+### Development Approach
+- First, I created the project using **ng new Employee-Management-System**.
+- Then, I started to fetch the data from the link that is given.
+- After that, I iterate the data to display it in the browser using Bootstrap table.
+- Then, I use Bootstrap modal to create and view the detail of transaction.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Get started 
+First, you need to install all the dependencies in the project using
+```
+npm install
+```
+For development,
+```
+npm start
+```
+For production,
+```
+npm run build
+```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Rules to use
+You must make sure that:
+- You can login to the system by using username: user and password: 1234.
+- Then point it to http://localhost:4200.
