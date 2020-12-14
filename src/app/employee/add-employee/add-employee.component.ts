@@ -76,10 +76,10 @@ export class AddEmployeeComponent implements OnInit {
     if (list) {
       list.unshift(emp);
       localStorage.setItem('employees', JSON.stringify(list));
-      this.alertService.success("Add employee successfully");
     }
     
     this.router.navigate(['/employee/employee-list']);
+    this.alertService.success("Add employee successfully");
   }
 
   backToList() {
