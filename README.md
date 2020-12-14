@@ -10,7 +10,7 @@ This project is created as the challenge to be a member of  Bank Mandiri team as
 - First, I created the project using **ng new Employee-Management-System**.
 - Then, I started to fetch the data from the link that is given.
 - After that, I iterate the data to display it in the browser using Bootstrap table.
-- Then, I use Bootstrap modal to create and view the detail of transaction.
+- Then, I use Bootstrap modal to create and view the detail of employee.
 
 ### Get started 
 First, you need to install all the dependencies in the project using
