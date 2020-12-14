@@ -23,10 +23,9 @@ ng serve
 ```
 For production,
 ```
-ng build
+ng build --prod
 ```
 
 ### Rules to use
-You must make sure that:
 - You can login to the system by using username: user and password: 1234.
 - Then point it to http://localhost:4200.
